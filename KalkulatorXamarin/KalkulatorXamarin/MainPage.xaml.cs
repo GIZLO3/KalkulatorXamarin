@@ -8,6 +8,18 @@ using Xamarin.Forms;
 
 namespace KalkulatorXamarin
 {
+    public enum Operation
+    {
+        None,
+        Add,
+        Subtract,
+        Multiply,
+        Divide,
+        Square,
+        SquareRoot,
+        Inverse
+    }
+
     public partial class MainPage : ContentPage
     {
         public MainPage()
