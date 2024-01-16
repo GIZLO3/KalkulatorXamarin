@@ -22,6 +22,13 @@ namespace KalkulatorXamarin
 
     public partial class MainPage : ContentPage
     {
+        private double a = 0;
+        private double b = 0;
+        private double result = 0;
+        private Operation operation = Operation.None;
+        private bool comma = false;
+        private bool equalsClicked = false;
+
         public MainPage()
         {
             InitializeComponent();
