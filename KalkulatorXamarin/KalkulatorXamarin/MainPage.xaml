@@ -4,6 +4,14 @@
              x:Class="KalkulatorXamarin.MainPage"
              BackgroundColor="Orange">
 
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="CornerRadius" Value="15" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+    </ContentPage.Resources>
+
     <StackLayout Margin="10,0" VerticalOptions="Center">
         <Frame Padding="20,40"
                BackgroundColor="White"
