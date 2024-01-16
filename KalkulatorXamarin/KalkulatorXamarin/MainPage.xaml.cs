@@ -94,7 +94,37 @@ namespace KalkulatorXamarin
 
         private void OperationClick(object sender, EventArgs e)
         {
-
+            comma = false;
+            if (operation != Operation.None)
+                return;
+            switch (((Button)sender).Text)
+            {
+                case "+":
+                    operation = Operation.Add;
+                    break;
+                case "-":
+                    operation = Operation.Subtract;
+                    break;
+                case "x":
+                    operation = Operation.Multiply;
+                    break;
+                case "/":
+                    operation = Operation.Divide;
+                    break;
+                case "x^2":
+                    operation = Operation.Square;
+                    result = a * a;
+                    break;
+                case "sqrt":
+                    operation = Operation.SquareRoot;
+                    result = Math.Sqrt(a);
+                    break;
+                case "1/x":
+                    operation = Operation.Inverse;
+                    result = 1 / a;
+                    break;
+            }
+            Print();
         }
 
         private void NumberClick(object sender, EventArgs e)
