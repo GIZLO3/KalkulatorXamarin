@@ -7,9 +7,22 @@
         <Frame Padding="20,40"
                BackgroundColor="White"
                CornerRadius="30">
-            <Grid ColumnDefinitions="*,*,*,*"
-                  RowDefinitions="auto, 80, 80, 80, 80, 80">
-                
+            <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="auto, 80, 80, 80, 80, 80">
+                <Frame Grid.Row="0" Grid.ColumnSpan="4"
+                       Margin="0,0,0,30"
+                       Background="lightGray"
+                       CornerRadius="10"
+                       HeightRequest="100">
+                    <StackLayout>
+                        <Label x:Name="outputEquationLabel"
+                               FontSize="18"
+                               HorizontalTextAlignment="End"/>
+                        <Label x:Name="outputLabel"
+                               FontSize="30"
+                               HorizontalTextAlignment="End"
+                               LineBreakMode="NoWrap"/>   
+                    </StackLayout>
+                </Frame>
             </Grid>
         </Frame>
 
