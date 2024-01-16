@@ -19,5 +19,10 @@ namespace KalkulatorXamarin
         {
 
         }
+
+        private void ClearClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
