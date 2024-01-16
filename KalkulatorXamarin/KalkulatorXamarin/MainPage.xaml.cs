@@ -34,5 +34,10 @@ namespace KalkulatorXamarin
         {
 
         }
+
+        private void CommaClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
