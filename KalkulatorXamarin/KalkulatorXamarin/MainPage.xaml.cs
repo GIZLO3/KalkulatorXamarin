@@ -99,7 +99,30 @@ namespace KalkulatorXamarin
 
         private void NumberClick(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (operation == Operation.None)
+                {
+                    if (comma && !a.ToString().Contains("."))
+                        a = double.Parse(a.ToString() + "." + ((Button)sender).Text);
+                    else
+                        a = double.Parse(a.ToString() + ((Button)sender).Text);
+                    comma = false;
+                }
+                else
+                {
+                    if (comma && !b.ToString().Contains("."))
+                        b = double.Parse(b.ToString() + "." + ((Button)sender).Text);
+                    else
+                        b = double.Parse(b.ToString() + ((Button)sender).Text);
+                    comma = false;
+                }
+                Print();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void EqualsClick(object sender, EventArgs e)
