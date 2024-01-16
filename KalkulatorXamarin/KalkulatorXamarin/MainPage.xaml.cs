@@ -24,5 +24,10 @@ namespace KalkulatorXamarin
         {
 
         }
+
+        private void NumberClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
