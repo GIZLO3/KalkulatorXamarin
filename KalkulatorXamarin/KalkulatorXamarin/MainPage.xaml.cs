@@ -29,5 +29,10 @@ namespace KalkulatorXamarin
         {
 
         }
+
+        private void EqualsClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
