@@ -97,11 +97,6 @@ namespace KalkulatorXamarin
 
         }
 
-        private void ClearClick(object sender, EventArgs e)
-        {
-
-        }
-
         private void NumberClick(object sender, EventArgs e)
         {
 
@@ -115,6 +110,17 @@ namespace KalkulatorXamarin
         private void CommaClick(object sender, EventArgs e)
         {
             comma = true;
+        }
+
+        private void ClearClick(object sender, EventArgs e)
+        {
+            a = 0;
+            b = 0;
+            result = 0;
+            operation = Operation.None;
+            comma = false;
+            equalsClicked = false;
+            Print();
         }
     }
 }
