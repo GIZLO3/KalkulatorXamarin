@@ -10,18 +10,6 @@ namespace KalkulatorXamarin
 {
     public partial class MainPage : ContentPage
     {
-        public enum Operation
-        {
-            None,
-            Add,
-            Subtract,
-            Multiply,
-            Divide,
-            Square,
-            SquareRoot,
-            Inverse
-        }
-
         public MainPage()
         {
             InitializeComponent();
