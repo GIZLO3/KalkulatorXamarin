@@ -14,5 +14,10 @@ namespace KalkulatorXamarin
         {
             InitializeComponent();
         }
+
+        private void OperationClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
