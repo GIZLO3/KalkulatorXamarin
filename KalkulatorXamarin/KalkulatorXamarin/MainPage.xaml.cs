@@ -157,7 +157,31 @@ namespace KalkulatorXamarin
 
         private void EqualsClick(object sender, EventArgs e)
         {
-
+            if (operation == Operation.None)
+                return;
+            switch (operation)
+            {
+                case Operation.Add:
+                    result = a + b;
+                    break;
+                case Operation.Subtract:
+                    result = a - b;
+                    break;
+                case Operation.Multiply:
+                    result = a * b;
+                    break;
+                case Operation.Divide:
+                    result = a / b;
+                    break;
+            }
+            equalsClicked = true;
+            Print();
+            equalsClicked = false;
+            a = result;
+            b = 0;
+            result = 0;
+            comma = false;
+            operation = Operation.None;
         }
 
         private void CommaClick(object sender, EventArgs e)
